@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 3: Adding Links, Images, and Iframes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 3: Adding Links, Images, and Iframes</h1>
+      <h2>Links</h2>
+      <p>Adding HTML links can be done using the &lt;a&gt; tag. Adding a link requires a "href" attribute to be added to the anchor (&lt;a&gt;) tag. The general syntax for adding an HTML link is: &lt;a href="pathToFile"&gt;LinkText&lt;/a&gt;. For an external link (linking something from the web, for example) the "pathToFile" will be the URL of whatever you want to link. For an internal link (linking something from your computer), put the relative file path of the linked file in the "pathToFile". To link to google.com, your link code would look like this: &lt;a href="https://google.com"&gt;google.com&lt;/a&gt; and would appear on the webpage as <a href="https://google.com">google.com.</a> </p>
+      <h2>Images</h2>
+      <p>Images can be linked in HTML using the &lt;img&gt; tag with the "src" attribute. See the photo shown below of a map of the US. This photo was added using this code:
+        &lt;img src="actualUSA.jpeg"width="100"alt=USAmap&gt;. The "width" tag specifies the width of the image in pixels. Using a "height" attribute instead will define the height. Unless both width and height are specified, proportions will remain constant. The "alt" attribute holds the description of the image to be displayed if the image cannot show. It also provides useful informatin for screenreading technology.
+      </p>
+      <img src="actualUSA.jpeg" width="100" alt="USAmap">
+      <h2>Iframes</h2>
+      <p>An Iframe is a webpage within a webpage. Let's say I want to link to the game 2048 within my webpage (as shown below). To do so, I would write: &lt;iframe src="https://2048game.com"title="2048 game" width="150" height="150"&gt;&lt;/iframe&gt;, which would show up like this:</p>
+      <iframe src="https://2048game.com" title="2048 game" width="150" height="150"></iframe>
+    </main>
+    <nav>
+      <a href="index.html">Back To Home</a>
+      <br>
+      <a href="lesson2.html">Previous Lesson</a>
+      <br>
+      <a href="lesson4.html">Next Lesson</a>
+    </nav>
+  </body>
+</html>

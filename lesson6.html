@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 6: File Paths</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 6: File Paths</h1>
+      <h2>Absolute Paths</h2>
+      <p>Use the absolute path of a file when linking an external file, as the computer does not have enough information about the file to use a relative path. If you have a file you need to link called project.docx stored in the Documents folder of a computer, the absolute file path of that file may be C:/Users/AI/Documents/project.docx.</p>
+      <p>It is important to note that the "/" indicates going down a level.</p>
+      <h2>Relative Paths</h2>
+      <p>Relative paths are generally better to use than absolute paths because they are shorter and won't necessarily break every time you reorganize your files, but they can only be used for internal files. If in your HTML webpage project, you have that same "project.docx" file stored the same way, and you were in the AI folder, the relative path of the project.docx file would just be "Documents/project.docx".</p>
+      <p>To go up a level instead of down a level, one would write "../". When going down a level, you have to specify which file or folder you are using (because any one folder may have more than one child folder), but you don't have to specify so when going up a level (because every file/folder only has one parent folder). So if you were trying to link to a file in the Users folder from the project.docx file, you would write "../../../file2.png" to go up to Documents, then up to AI, then up to Users, and then down to file2.png.</p>
+    </main>
+    <nav>
+      <a href="index.html">Back To Home</a>
+      <br>
+      <a href="lesson5.html">Previous Lesson</a>
+      <br>
+      <a href="lesson7.html">Next Lesson</a>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 4: The "Pre" and "Head" Tags</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 4: The "Pre" and "Head" Tags</h1>
+      <h2>&lt;Pre&gt;</h2>
+      <p>Let's say you want to put a poem into your webpage. You might copy and paste an existing poem into a paragraph, but when you load it, it wouldn't look like a poem at all. HTML ignores extra spaces and line breaks between words unless one is specified by a tag like the &lt;br&gt; tag, which creates a line break. To get around this problem, you can use the &lt;pre&gt; tag, which keeps all of its enclosed text in its original formatting. To add Robert Frost's <i>Nothing Gold Can Stay</i> into this webpage, you would have to put it in the "pre" tag using the following code:</p>
+      <pre>
+      &lt;pre&gt;
+        Nature's first green is gold,
+        Her hardest hue to hold.
+        Her early leaf's a flower;
+        But only so an hour.
+      &lt;/pre&gt;
+    </pre>
+      <p>This code would show up like this:
+        <pre>
+          Nature's first green is gold,
+          Her hardest hue to hold.
+          Her early leaf's a flower;
+          But only so an hour.
+        </pre>
+        <p>As opposed to this (same code, with "p" instead of "pre"):</p>
+        <p>Nature's first green is gold,
+          Her hardest hue to hold.
+          Her early leaf's a flower;
+          But only so an hour.</p>
+      <h2>&lt;Head&gt;</h2>
+      <p>The "head" tag holds all the information that's important for your webpage, but that shouldn't be visible on a webpage. These tags are:</p>
+      <ol>
+        <li>&lt;title&gt;: defines the text that appears on the window tab</li>
+        <li>&lt;meta&gt;: holds data invisible to page viewers but visible to web crawlers. Includes things like charset (defines the character set, usually "utf-8"), viewport, author, description, etc.</li>
+        <li>&lt;style&gt;: holds relevant CSS code</li>
+        <li>&lt;script&gt;: holds relevant JavaScript code that may need to load before the webpage</li>
+        <li>&lt;link&gt;: links to important files like external JavaScript/CSS</li>
+      </ol>
+      <h2>Displaying Tags In A Webpage</h2>
+      <p>To diplay tags in a webpage, you cannot use regular angle brackets, because they will be recognized by your computer as an actual tag and will not appear on your webpage. To combat this issue, replace the "&lt;" symbol with "&amp;lt;" and the "&gt;" symbol with "&amp;gt;". This is known as the "nickname" method of displaying certain charaters that are otherwsise difficult to use when writing HTML code. Other characters that often get written using nicknames instead of a key on a keyboard is the "&", emojis, and characters that use an alphabet other than the Latin one.</p>
+    </main>
+    <nav>
+      <a href="index.html">Back To Home</a>
+      <br>
+      <a href="lesson3.html">Previous Lesson</a>
+      <br>
+      <a href="lesson5.html">Next Lesson</a>
+    </nav>
+  </body>
+</html>

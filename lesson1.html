@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 1: Creating a Basic HTML Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 1: Creating a Basic HTML Webpage</h1>
+      <p> As you have already learned, HTML is a <strong>markup</strong> language. Markups in HTML are called tags. Tags begin and end with angle brackets, and any commands/codes you want to write in HTML must be written in the form of a tag. Below, you will learn some of the most important and essential HTML tags, the ones you can't make a webpage without.</p>
+      <h2>Essential HTML Elements</h2>
+      <p>Every single HTML page you create, no matter what, has to have certain elements in order to work. This section will go over these elements.</p>
+      <p>First of all, each HTML page must start with &lt;!DOCTYPE html&gt;. This is called an "HTML5 Doctype Declaration", and it essentially tells your text editor what language you are using (in this case, HTML Version 5).</p>
+      <p>Directly under that tag, you must put the &lt;html&gt; tag, which begins the page. Within the HTML tag, you include the &lt;head&gt; and &lt;body&gt; tags. The &lt;head&gt; tag includes all the page's metadata. We'll get more into what exactly that means in a later lesson. For now, all you need to know is the head holds everything that the webpage and web crawlers need to know, but that should not be visible on the actual webpage.The &lt;body&gt; tag goes after the head tag and includes everything that is visible on the webpage. Every image, word, heading, link, etc., that shows up on the webpage is written in the body tag of the webpage.</p>
+      <p>Within the body tag, there are a variety of other tags you can and should use in your webpage. To add headings, you can use a heading tag. The largest heading is &lt;h1&gt;, the next largest is &lt;h2&gt;, and so on and so on until the smallest heading, &lt;h6&gt;.</p>
+      <p>Within each heading. or subheading, you may very well want to add paragraphs. To do so, use the &lt;p&gt; tag. Heading and paragraph tags are known as <strong>block-level elements</strong>, because using them creates a new block of text (like a paragraph). There are also <strong>inline elements</strong>, which can appear within a paragraph, inside and/or next to other elements.</p>
+      <h2>Text Formatting</h2>
+      <p>Most text formatting tags are inline elements. With HTML, you can make words <strong>bold</strong> with the &lt;strong&gt; or &lt;b&gt; tags, <i>italicized</i> with the &lt;i&gt; or &lt;em&gt; tags, <mark>highlighted</mark> with the &lt;mark&gt; tag, <small>smaller</small> with the &lt;small&gt; tag, <del>crossed out</del> with the &lt;del&gt; tag, <ins>underlined</ins> with the &lt;ins&gt; tag, <sub>subscript</sub> with the &lt;sub&gt; tag, or <sup>superscript</sup> with the &lt;sup&gt;.</p>
+      <h2>Lists</h2>
+      <p>Making lists in HTML is relatively simple. You can make either a numbered list or a bulleted one. Here is what the code for making a numbered list looks like:</p>
+    <pre>&lt;ol&gt;
+     &lt;li&gt;Item 1&lt;/li&gt;
+     &lt;li&gt;Item 2&lt;/li&gt;
+     &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+      </pre>
+      Wrting this code will show this on your webpage:
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    <p>To make an unordered list with bullets, replace "ol" with "ul".</p> 
+    </main>
+    <nav>
+      <a href="index.html">Back To Home</a>
+      <br>
+      <a href="lesson2.html">Next Lesson</a>
+    </nav>
+  </body>
+</html>

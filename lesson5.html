@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 5: Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Lesson 5: Tables</h1>
+      <h2>Required Tags</h2>
+Making a table requires three tags. The tags and their purposes are outlined below:
+      <ol>
+        <li>&lt;table&gt;: creates a table.</li>
+        <li>&lt;th&gt;: creates a table row formatted as a heading.</li>
+        <li>&lt;tr&gt;: creates a table row.</li>
+        <li>&lt;td&gt;: adds the data intended for a table cell.</li>
+      </ol>
+      <p>You may also need the attributes "colspan" (to have a cell span multiple columns) and "rowspan" (to have a cell span multiple rows). Below is a table designed in HTML:</p>
+      <table>
+        <tr>
+          <th>Period</th>
+          <th>Class (A Day)</th>
+          <th>Class (B Day)</th>
+          <th>Teacher (A Day)</th>
+          <th>Teacher (B Day)</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td colspan="2">Spanish</td>
+          <td colspan="2">Sra. Africano</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td colspan="2">Global History II</td>
+          <td colspan="2">Mr. Caccamo</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td rowspan="2">Computer Science</td>
+          <td>Health</td>
+          <td rowspan="2">Mr. Saha</td>
+          <td>Dr. Helfenbein</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>PE</td>
+          <td>Mr. Powell</td>      
+        </tr>
+        <tr>
+          <td>5</td>
+          <td colspan="2">English</td>
+          <td colspan="2">Ms. Gallo</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td colspan="2">Lunch</td>
+          <td colspan="2">N/A</td>
+        </tr>
+      <tr>
+        <td>7</td>
+        <td colspan="2">Algebra II</td>
+        <td colspan="2">Ms. Mun</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td colspan="2">Physics</td>
+        <td colspan="2">Mr. Laskowski</td>
+      </tr>
+      </table>
+      Here is all the code needed to create that table:
+      <pre>
+      &lt;table&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Period&lt;/th&gt;
+          &lt;th&gt;Class (A Day)&lt;/th&gt;
+          &lt;th&gt;Class (B Day)&lt;/th&gt;
+          &lt;th&gt;Teacher (A Day)&lt;/th&gt;
+          &lt;th&gt;Teacher (B Day)&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td colspan="2"&gt;Spanish&lt;/td&gt;
+          &lt;td colspan="2"&gt;Sra. Africano&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+          &lt;td colspan="2"&gt;Global History II&lt;/td&gt;
+          &lt;td colspan="2"&gt;Mr. Caccamo&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+          &lt;td rowspan="2"&gt;Computer Science&lt;/td&gt;
+          &lt;td&gt;Health&gt;/td&gt;
+          &lt;td rowspan="2"&gt;Mr. Saha&lt;/td&gt;
+            &lt;td&gt;Dr. Helfenbein&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;PE&lt;/td&gt;
+            &lt;td&gt;Mr. Powell&lt;/td&gt;      
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;5&lt;/td&gt;
+          &lt;td colspan="2"&gt;English&lt;/td&gt;
+          &lt;td colspan="2"&gt;Ms. Gallo&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;6&lt;/td&gt;
+          &lt;td colspan="2"&gt;Lunch&lt;/td&gt;
+          &lt;td colspan="2"&gt;N/A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;7&lt;/td&gt;
+        &lt;td colspan="2"&gt;Algebra II&lt;/td&gt;
+        &lt;td colspan="2"&gt;Ms. Mun&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+          &lt;td&gt;8&lt;/td&gt;
+        &lt;td colspan="2"&gt;Physics&lt;/td&gt;
+        &lt;td colspan="2"&gt;Mr. Laskowski&lt;/td&gt;
+          &lt;/tr&gt;
+      &lt;/table&gt;
+    </pre>
+    <p>To make the borders appear, you will also need to add the following CSS code:</p>
+    <pre>table, th, td {
+      Border:1px solid black;
+    }
+    </pre>
+    </main>
+    <nav>
+      <a href="index.html">Back To Home</a>
+      <br>
+      <a href="lesson4.html">Previous Lesson</a>
+      <br>
+      <a href="lesson6.html">Next Lesson</a>
+    </nav>
+  </body>
+</html>
